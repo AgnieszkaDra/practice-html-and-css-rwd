@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    display: grid;
 }
 
 .p, .t, .v {
@@ -24,3 +25,19 @@
 .v {
     border-color: #baffc9;
 }
+
+
+@media (max-width: 599px) {
+
+    body {
+        display: grid;
+        grid-template: repeat(2, 50vh) / 1fr 1fr;
+    }
+
+    .p {
+        order: -1;
+    }
+
+    .t {
+        order: 2;
+    }
