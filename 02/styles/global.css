@@ -6,24 +6,15 @@
 
 body{
     display: grid;
-	grid-template-area: "a"
-									"b"
-									"c";
-	grid-template-rows: 50vh 50vh 50vh;
+	
+	grid-template-rows: repeat(3, 50vh);
 	grid-template-columns: minmax(min-content, 1200px);
-	
-	
-	justify-content: center;
-	
-  
-	
+    justify-content: center;
 }
 
 .a, .b, .c {
     border: 3px solid transparent;
 	min-height: 50px;
-   
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -54,7 +45,7 @@ body{
     }
 
     .c {
-        order: inherit;
+         /* order: inherit;   */ grid-column: 2 / 3;
     }
 .
 
