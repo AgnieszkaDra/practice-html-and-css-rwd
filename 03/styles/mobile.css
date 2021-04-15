@@ -1,0 +1,12 @@
+body{
+    display: flex;
+    flex-direction:column;
+}
+
+
+
+  .p{
+    display: flex;
+    order: -1;
+}  
+

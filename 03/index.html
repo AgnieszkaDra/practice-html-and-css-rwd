@@ -5,12 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>devmentor.pl - HTML & CSS: RWD - #03</title>
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" media="(max-width: 599px)" href="styles/mobile.css">
+    <link rel="stylesheet" media="(min-width: 600px)" href=" styles/tablet.css">
+    <link rel="stylesheet" media="(min-width: 1200px)" href=" styles/desktop.css">
+</head>
 </head>
 <body>
     
-    <main class="t">T</main>
-    <header class="p">P</header>
-    <side class="v">V</side>
+    <main class="t">
+        <span class="text">TO</span>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate accusantium explicabo libero suscipit consequatur aspernatur dignissimos, sit quibusdam deserunt amet quo quos est ipsum expedita voluptatibus beatae quis provident ratione.
+        </p>
+    </main>
+    <header class="p">
+        <span class="text">P</span>
+        <div class="container">
+            <picture>
+                <source media="(min-width: 1200px)" srcset="img/catdesktop.webp" type="image/webp"/>
+                <source media="(min-width:600px)" srcset="img/cat.webp" type="image/webp"/>
+                <source srcset="img/mobile.webp" type="image/webp"/>
+                <img class="photos" src="img/cat.webp" alt="Kot"/>
+            </picture>
+        </div>
+    </header>
+    
+    <side class="v">
+        <span class="text">V</span>
+        <iframe class="video" src="https://www.youtube.com/watch?v=NsUWXo8M7UA"></iframe>
+    </side>
 
 </body>
 </html>
