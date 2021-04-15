@@ -1,0 +1,28 @@
+/* ./css/mobile.css */
+/* ... */
+
+*{
+    box-sizing: border-box;
+}
+nav ul {
+    display: none;
+   }
+   nav input:checked + ul {
+    display: block;
+   }
+
+   nav {
+    position: relative;
+   }
+   nav label {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+   }
+   nav input {
+    display: none;
+   }
+
+   body{
+       background-color: aquamarine;
+   }
